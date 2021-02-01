@@ -4,7 +4,7 @@ public class Employee {
 	// variables/data members
 	int empId;
 	String empName="Ashok";
-	String company="Microsoft";
+	String company="Microsoft"; 
 
 	// methods
 	public void employeeId() {
