@@ -28,9 +28,6 @@ public class LogicalOperators {
 											//!(4<=-8)
 											//!F -- True
 													
-		System.out.println("(a<b) || (b>c) --->"+((a<b)||(b>c)));//true
-													//8<4||4>-10
-													//F||T -- T
 	}
 
 	public static void main(String[] args) {
