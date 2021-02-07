@@ -8,7 +8,7 @@ package com.training.corejava;
  */
 public class IfElseExample {
 
-	public static void ifElseEx() {
+	public static void ifElseEx() { //static method
 
 		int age = 18;
 
@@ -29,9 +29,9 @@ public class IfElseExample {
 	/**
 	 * Method to perform if else if operations
 	 */
-	public void ifElseIf() {
+	public void ifElseIf() { //instance method
 
-		int marks = 20;
+		int marks = 80;
 		if (marks >= 60) {
 			System.out.println(" First Class");
 		} else if (marks >= 50 && marks < 60) {
@@ -41,13 +41,53 @@ public class IfElseExample {
 		} else {
 			System.out.println("Fail");
 		}
-
 	}
+	
+	/**
+	 * Method to perform operations using switch statment
+	 */
+	//shortcut to uppercase letters - Ctrl+shift+X
+	//shortcut to lowercase letters - Ctrl+shift+Y
+	public void switchExample(int month) {
+		
+		switch(month) {
+		case 1:
+			System.out.println("JANUARY");
+			break;
+			
+		case 2:
+			System.out.println("FEBRUARY");
+			break;
+			
+		case 3:
+			System.out.println("MARCH");
+			break;
+			
+		case 4:
+			System.out.println("APRIL");
+			break;
+			
+		case 5:
+			System.out.println("MAY");
+			break;
+		case 6:
+			System.out.println("JUNE");
+			break;
+		
+		default:
+			System.out.println("invalid month");
+		}
+		
+	}
+	
+	
 
 	public static void main(String[] args) {
 		IfElseExample iee = new IfElseExample();
 		//IfElseExample.ifElseEx();
 		iee.ifElseIf();
+		
+		iee.switchExample(1);
 
 	}
 
