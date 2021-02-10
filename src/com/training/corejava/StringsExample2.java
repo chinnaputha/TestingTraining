@@ -40,7 +40,7 @@ public class StringsExample2 {
 		
 		str6= str6.replace("Maven", "Gradle");//Gradle is build Tool
 		System.out.println(" String replace --> "+str6);
-		
+		 
 		String str7 = "I Love My India";
 		String[] strSplit = str7.split(" ");
 		System.out.println("size of strSplit "+strSplit.length);//4
