@@ -6,11 +6,7 @@ public class Employee3 {
 		Employee e3 = new Employee();
 		e3.setUsername("empl3@gmail.com");
 		e3.setPassword("emp3@123");
-		
-		
-		
-		
-
+	
 	}
 
 }

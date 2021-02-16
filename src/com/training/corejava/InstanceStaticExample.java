@@ -19,6 +19,7 @@ public class InstanceStaticExample  {
 
 	// non-static method
 	public void method3() {
+		
 		System.out.println("InstanceStaticExample.method3()" + a);
 
 	}
