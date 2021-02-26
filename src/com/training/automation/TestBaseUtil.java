@@ -19,5 +19,9 @@ public class TestBaseUtil {
 		driver.get(appURL);
 		driver.manage().window().maximize();
 	}
+	
+	public static void closeBrowser() {
+		driver.close();
+	}
 
 }
