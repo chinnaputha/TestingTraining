@@ -1,5 +1,7 @@
 package com.training.automation;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -16,11 +18,13 @@ public class KeyboardEvents extends TestBaseUtil {
 	/**
 	 * Method to perform keyboard events
 	 * @throws InterruptedException
+	 * @throws IOException 
 	 */
-	public void keyboardEvents() throws InterruptedException {
+	@org.testng.annotations.Test
+	public void keyboardEvents() throws InterruptedException, IOException {
 		lanuchApplication("http://demo.automationtesting.in/Register.html");
 
-		WebElement firstName= driver.findElement(By.xpath("//input[@placeholder='First Name']"));
+		WebElement firstName= driver.findElement(By.xpath("//input[@placeholder='First Namedfgh']"));
 		
 		Actions act = new Actions(driver);
 		String firsname=" helloseleniumjava";
@@ -41,6 +45,7 @@ public class KeyboardEvents extends TestBaseUtil {
 		//alternate way for multiple keys
 		String selectAllDelete = Keys.chord(Keys.CONTROL,"a",Keys.DELETE);
 		address.sendKeys(selectAllDelete);
+		captureScreenshot();
 		
 		//address.clear(); 
 		
@@ -53,9 +58,9 @@ public class KeyboardEvents extends TestBaseUtil {
 		
 	}
 
-	public static void main(String[] args) throws InterruptedException {
-		KeyboardEvents ace = new KeyboardEvents();
-		ace.keyboardEvents();
-	}
+//	public static void main(String[] args) throws Exception {
+//		KeyboardEvents ace = new KeyboardEvents();
+//		ace.keyboardEvents();
+//	}
 
 }
