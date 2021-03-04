@@ -16,7 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestBaseUtil {
 
-	static WebDriver driver;
+	public static WebDriver driver;
 
 	public static void lanuchApplication(String appURL) {
 
