@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
  * @author Chinna.Putha
  *
  */
+
+@Test(groups = "Smoke")
 public class TestngAnnotationAttributesExample {
 	
 	

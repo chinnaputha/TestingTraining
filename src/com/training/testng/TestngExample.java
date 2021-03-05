@@ -15,6 +15,8 @@ import org.testng.annotations.Test;
  * @author Chinna.Putha
  *
  */
+
+@Test(groups = "Regression")
 public class TestngExample {
 	
 	@BeforeSuite

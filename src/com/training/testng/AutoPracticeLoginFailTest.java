@@ -2,6 +2,7 @@ package com.training.testng;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -38,7 +39,15 @@ public class AutoPracticeLoginFailTest extends TestBaseUtil{
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.cssSelector("button[id='SubmitLogin'] span")));
 		
-		driver.findElement(By.cssSelector("button[id='SubmitLogin'] span")).click();
+		WebElement loginEle = driver.findElement(By.cssSelector("button[id='SubmitLogin'] span"));
+		//loginEle.click();
+		
+		String pageTitle= jse.executeScript("return document.title;").toString();
+	
+		System.out.println("page title -->"+pageTitle);
+		Assert.assertEquals(pageTitle, "Login - My Store");
+		
+		jse.executeScript("arguments[0].click();", loginEle);
 		
 	}
 
